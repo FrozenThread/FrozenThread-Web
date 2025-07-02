@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* src/App.css or src/index.css */
+
+/* src/App.css */
+
+@font-face {
+  font-family: 'CopperplateGothicBold';
+  src: url('./assets/fonts/copperplategothic_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AntonRegular';
+  src: url('./assets/fonts/Anton_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'StageWander';
+  src: url('./assets/fonts/Stage_Wanders.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.copperplate-bold {
+  font-family: 'CopperplateGothicBold', sans-serif;
+}
+
+.anton-regular {
+  font-family: 'AntonRegular', sans-serif;
+}
+.stage-wander{
+  font-family: 'StageWander',sans-serif;
+}

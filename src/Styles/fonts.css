@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'CopperplateGothicBold';
+    src: url('../assets/fonts/copperplategothic_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.copperplate-bold {
+    font-family: 'CopperplateGothicBold', sans-serif;
+}
