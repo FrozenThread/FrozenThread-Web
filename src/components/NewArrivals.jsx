@@ -3,29 +3,29 @@ import React from 'react'
 const products = [
     {
         id: 1,
-        image: '/images/product1.jpg',
+        image: 'https://res.cloudinary.com/dpof6jswm/image/upload/v1753005295/Picsart_25-05-30_00-42-41-167_1_sq1mdw.jpg',
         name: 'Cartoon  Caus',
         category: 'Oversized t-shirt',
         price: '₹599',
     },
     {
         id: 2,
-        image: '/images/product2.jpg',
+        image: 'https://res.cloudinary.com/dpof6jswm/image/upload/v1753005294/Picsart_25-06-28_13-07-29-502_cjxnag.jpg',
         name: 'Harry Potter HOGWARTS',
         category: 'Oversized t-shirt',
         price: '₹599',
     },
     {
         id: 3,
-        image: '/images/product3.jpg',
-        name: 'Spooky Ghost Diffy the Oddy',
+        image: 'https://res.cloudinary.com/dpof6jswm/image/upload/v1753005550/Picsart_25-05-30_14-29-30-555_sxwf4o.jpg',
+        name: 'SPOOKY Ghost Smoking Kills',
         category: 'Oversized t-shirt',
         price: '₹599',
     },
     {
         id: 4,
-        image: '/images/product4.jpg',
-        name: 'SPOOKY Ghost Smoking Kills',
+        image: '/images/product3.jpg',
+        name: 'Spooky Ghost Diffy the Oddy',
         category: 'Oversized t-shirt',
         price: '₹599',
     },
@@ -51,7 +51,7 @@ export const NewArrivals = () => {
                     {products.map((product) => (
                         <div
                             key={product.id}
-                            className="w-[400px] bg-white shadow rounded-lg p-3 hover:scale-105 transition-transform duration-300"
+                            className="w-[350px] bg-white shadow rounded-lg p-3 hover:scale-105 transition-transform duration-300"
                         >
                             <img
                                 src={product.image}
