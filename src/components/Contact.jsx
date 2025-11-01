@@ -7,15 +7,22 @@ export const Contact = () => {
                 CONTACT US
             </div>
 
-            {/* Main container for the 2-column layout 
-                - Stacks vertically on mobile (flex-col)
-                - Sits side-by-side on large screens (lg:flex-row)
-            */}
-            <div className='max-w-6xl mx-auto w-full px-4 flex flex-col lg:flex-row lg:items-center lg:gap-8'>
+            <div className='max-w-6xl mx-auto w-full px-4 flex flex-col lg:flex-row lg:items-center'>
                 
-                {/* --- LEFT COLUMN: THE FORM --- */}
-                {/* Takes full width on mobile, half width on large screens */}
-                <div className='w-full lg:w-1/2'>
+                
+                <div className="w-full lg:w-1/2 lg:text-right lg:pr-8 lg:border-r border-gray-500">
+                    <h3 className='font-stage-wander text-5xl text-black'>
+                        Get In Touch
+                    </h3>
+                    <p className='font-anton-regular text-2xl text-gray-700 mt-4'>
+                        We're excited to talk with you.
+                    </p>
+                    <p className='text-lg text-gray-600 mt-2'>
+                        Contact us for your queries and orders. Use the form to send us a message, and we'll get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <div className='w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-8'>
                     <form
                         action="https://formspree.io/f/xovpppkq"
                         method="POST"
@@ -26,7 +33,7 @@ export const Contact = () => {
                             <input
                                 id='name'
                                 type='text'
-                                name='name' // 'name' attribute is required
+                                name='name' 
                                 placeholder='Enter your Name'
                                 className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
                                 required
@@ -37,7 +44,7 @@ export const Contact = () => {
                             <input
                                 id='email'
                                 type='email'
-                                name='email' // 'name' attribute is required
+                                name='email' 
                                 placeholder='Enter your Email'
                                 className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
                                 required
@@ -48,7 +55,7 @@ export const Contact = () => {
                             <input
                                 id='phoneNumber'
                                 type='tel'
-                                name='phone' // 'name' attribute is required
+                                name='phone' 
                                 placeholder='Enter your Phone Number'
                                 className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none'
                             />
@@ -57,7 +64,7 @@ export const Contact = () => {
                             <label htmlFor='message' className='mb-1 font-medium'>Product Inquiry</label>
                             <textarea
                                 id='message'
-                                name='message' // 'name' attribute is required
+                                name='message' 
                                 rows='4'
                                 placeholder='e.g., "Hi, I am interested in the Spooky Ghost t-shirt in size Large..."'
                                 className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
@@ -72,20 +79,6 @@ export const Contact = () => {
                             Send Message
                         </button>
                     </form>
-                </div>
-
-                {/* --- RIGHT COLUMN: DECORATIVE TEXT --- */}
-                {/* Full width on mobile with top margin, half width on large screens */}
-                <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-8 lg:border-l border-gray-500">
-                    <h3 className='font-stage-wander text-5xl text-black'>
-                        Get In Touch
-                    </h3>
-                    <p className='font-anton-regular text-2xl text-gray-700 mt-4'>
-                        We're excited to talk with you.
-                    </p>
-                    <p className='text-lg text-gray-600 mt-2'>
-                        Contact us for your queries and orders. Use the form to send us a message, and we'll get back to you as soon as possible.
-                    </p>
                 </div>
             </div>
         </div>
