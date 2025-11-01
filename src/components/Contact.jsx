@@ -2,40 +2,93 @@ import React from 'react'
 
 export const Contact = () => {
     return (
-        <div className='h-96 bg-blue-200 p-4 flex flex-col gap-4 items-center justify-center'>
-            <h2 className='copperplate-bold text-3xl w-full text-center'>CONTACT US</h2>
-            <div className='h-full  mx-auto'>
-                <form action="" className='flex flex-col gap-4'>
-                    <div className='flex flex-col'>
-                        <label htmlFor='name'>Enter Name</label>
-                        <input
-                            id='name'
-                            type='text'
-                            placeholder='Enter your Name'
-                            className=' bg-white px-2 rounded-md w-1/2'
-                        />
-                    </div>
-                    <div className='flex flex-col'>
-                        <label htmlFor='email'>Enter your E-mail Id</label>
-                        <input
-                            id='email'
-                            type='email'
-                            placeholder='Enter your Email'
-                            className=' bg-white px-2 rounded-md w-1/2'
-                        />
-                    </div>
-                    <div className='flex flex-col'>
-                        <label htmlFor='phoneNumber'>Enter Phone Number</label>
-                        <input
-                        id='phoneNumber'
-                            type='number'
-                            placeholder='Enter your Phone Number'
-                            className=' bg-white px-2 rounded-md w-1/2'
-                        />
-                    </div>
-                    <button type='submit' className='bg-[#97d86f] px-4 py-2 text-xl cursor-pointer rounded-b-md'>Send Message</button>
-                </form>
+        <div className='w-full py-12'>
+            <div className="text-3xl font-anton-regular font-bold w-full text-center p-2 bg-black text-white mb-8">
+                CONTACT US
+            </div>
+
+            {/* Main container for the 2-column layout 
+                - Stacks vertically on mobile (flex-col)
+                - Sits side-by-side on large screens (lg:flex-row)
+            */}
+            <div className='max-w-6xl mx-auto w-full px-4 flex flex-col lg:flex-row lg:items-center lg:gap-8'>
+                
+                {/* --- LEFT COLUMN: THE FORM --- */}
+                {/* Takes full width on mobile, half width on large screens */}
+                <div className='w-full lg:w-1/2'>
+                    <form
+                        action="https://formspree.io/f/xovpppkq"
+                        method="POST"
+                        className='flex flex-col gap-5'
+                    >
+                        <div className='flex flex-col'>
+                            <label htmlFor='name' className='mb-1 font-medium'>Enter Name</label>
+                            <input
+                                id='name'
+                                type='text'
+                                name='name' // 'name' attribute is required
+                                placeholder='Enter your Name'
+                                className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
+                                required
+                            />
+                        </div>
+                        <div className='flex flex-col'>
+                            <label htmlFor='email' className='mb-1 font-medium'>Enter your E-mail Id</label>
+                            <input
+                                id='email'
+                                type='email'
+                                name='email' // 'name' attribute is required
+                                placeholder='Enter your Email'
+                                className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
+                                required
+                            />
+                        </div>
+                        <div className='flex flex-col'>
+                            <label htmlFor='phoneNumber' className='mb-1 font-medium'>Enter Phone Number (Optional)</label>
+                            <input
+                                id='phoneNumber'
+                                type='tel'
+                                name='phone' // 'name' attribute is required
+                                placeholder='Enter your Phone Number'
+                                className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none'
+                            />
+                        </div>
+                        <div className='flex flex-col'>
+                            <label htmlFor='message' className='mb-1 font-medium'>Product Inquiry</label>
+                            <textarea
+                                id='message'
+                                name='message' // 'name' attribute is required
+                                rows='4'
+                                placeholder='e.g., "Hi, I am interested in the Spooky Ghost t-shirt in size Large..."'
+                                className='w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-black'
+                                required
+                            />
+                        </div>
+
+                        <button
+                            type='submit'
+                            className='bg-black text-white px-4 py-2 text-xl cursor-pointer rounded-md w-full hover:bg-gray-800 transition-colors'
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                {/* --- RIGHT COLUMN: DECORATIVE TEXT --- */}
+                {/* Full width on mobile with top margin, half width on large screens */}
+                <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-8 lg:border-l border-gray-500">
+                    <h3 className='font-stage-wander text-5xl text-black'>
+                        Get In Touch
+                    </h3>
+                    <p className='font-anton-regular text-2xl text-gray-700 mt-4'>
+                        We're excited to talk with you.
+                    </p>
+                    <p className='text-lg text-gray-600 mt-2'>
+                        Contact us for your queries and orders. Use the form to send us a message, and we'll get back to you as soon as possible.
+                    </p>
+                </div>
             </div>
         </div>
     )
 }
+export default Contact;

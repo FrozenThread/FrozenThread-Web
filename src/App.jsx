@@ -5,6 +5,7 @@ import ImageSlider from './components/ImageSlider'
 import { MostSellingTees } from './components/MostSellingTees'
 import { Navabar } from './components/Navabar'
 import { NewArrivals } from './components/NewArrivals'
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       <Categories/>
       <MostSellingTees/>
       <Contact/>
-      {/* </div> */}
+      <Footer/>
     </div>
   )
 }
