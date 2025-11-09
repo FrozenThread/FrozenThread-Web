@@ -16,7 +16,6 @@ function App() {
       <ImageSlider/>
       <div className='bg-black text-white text-center w-full stage-wander text-2xl py-6'>unraveling stitch by stitch</div>
 
-      {/* Suspense handles the "loading" state while the lazy components are fetched */}
       <Suspense fallback={<div className='text-center p-10'>Loading...</div>}>
         <NewArrivals/>
         <Categories/>
