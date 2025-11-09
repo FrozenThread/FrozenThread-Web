@@ -6,12 +6,12 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 
 const images = [
-    "https://res.cloudinary.com/dpof6jswm/image/upload/v1762161888/1_20251101_195929_0000_iz8ihh.jpg",
-    "https://res.cloudinary.com/dpof6jswm/image/upload/v1762161888/2_20251101_195929_0001_ks1lrq.jpg",
-    "https://res.cloudinary.com/dpof6jswm/image/upload/v1762161885/3_20251101_195929_0002_uxjdwt.jpg",
-    "https://res.cloudinary.com/dpof6jswm/image/upload/v1762161882/4_20251101_195930_0003_j7enym.jpg",
-    "https://res.cloudinary.com/dpof6jswm/image/upload/v1762161887/5_20251101_195930_0004_yk6pmg.jpg",
-    "https://res.cloudinary.com/dpof6jswm/image/upload/v1762161892/6_20251101_195930_0005_tvheao.jpg",
+    "https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_1920,c_limit/v1762161888/1_20251101_195929_0000_iz8ihh.jpg",
+    "https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_1920,c_limit/v1762161888/2_20251101_195929_0001_ks1lrq.jpg",
+    "https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_1920,c_limit/v1762161885/3_20251101_195929_0002_uxjdwt.jpg",
+    "https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_1920,c_limit/v1762161882/4_20251101_195930_0003_j7enym.jpg",
+    "https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_1920,c_limit/v1762161887/5_20251101_195930_0004_yk6pmg.jpg",
+    "https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_1920,c_limit/v1762161892/6_20251101_195930_0005_tvheao.jpg",
 ]
 
 const ImageSlider = () => {

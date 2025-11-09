@@ -69,3 +69,4 @@ export const NewArrivals = () => {
         </div>
     )
 }
+export default NewArrivals;

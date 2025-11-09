@@ -65,3 +65,4 @@ export const MostSellingTees = () => {
         </div>
     )
 }
+export default MostSellingTees;
