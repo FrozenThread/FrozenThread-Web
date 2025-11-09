@@ -1,20 +1,15 @@
-import React from 'react'
-// 1. Import the FaLinkedin icon
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
 export const Footer = () => {
     return (
-        // Main container with black background and white text
         <footer className='bg-black text-white p-10'>
             <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
 
-                {/* Column 1: Brand and Slogan */}
                 <div>
                     <h3 className='font-stage-wander text-3xl mb-2'>FROZEN THREAD</h3>
                     <p className='text-gray-400'>Unraveling stitch by stitch.</p>
                 </div>
 
-                {/* Column 2: Quick Links */}
                 <div>
                     <h4 className='font-anton-regular text-xl mb-3'>QUICK LINKS</h4>
                     <ul className='space-y-2'>
@@ -25,7 +20,6 @@ export const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Column 3: Follow Us */}
                 <div>
                     <h4 className='font-anton-regular text-xl mb-3'>FOLLOW US</h4>
                     <div className='flex gap-4'>
@@ -43,13 +37,11 @@ export const Footer = () => {
 
             </div>
 
-            {/* 2. Updated Bottom bar with copyright and developer credit */}
             <div className='mt-8 pt-8 border-t border-gray-700 text-center text-gray-500'>
                 <div>
                     &copy; {new Date().getFullYear()} Frozen Thread. All Rights Reserved.
                 </div>
                 
-                {/* --- THIS IS THE NEW SECTION --- */}
                 <div className='mt-2'>
                     Developed by 
                     <a 
@@ -61,7 +53,6 @@ export const Footer = () => {
                         Md Abid Hussain
                     </a>
                 </div>
-                {/* -------------------------------- */}
 
             </div>
         </footer>

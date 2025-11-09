@@ -34,7 +34,6 @@ const products = [
         category: 'Oversized t-shirt',
         price: '₹599',
     },
-    // Add more products as needed
 ]
 
 export const MostSellingTees = () => {
