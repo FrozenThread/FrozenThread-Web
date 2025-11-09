@@ -1,7 +1,6 @@
 import React from 'react'
-// You'll need these icons. You can get them from a library like 'react-icons'.
-// Run: npm install react-icons
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
+// 1. Import the FaLinkedin icon
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa'
 
 export const Footer = () => {
     return (
@@ -44,9 +43,26 @@ export const Footer = () => {
 
             </div>
 
-            {/* Bottom bar with copyright */}
+            {/* 2. Updated Bottom bar with copyright and developer credit */}
             <div className='mt-8 pt-8 border-t border-gray-700 text-center text-gray-500'>
-                &copy; {new Date().getFullYear()} Frozen Thread. All Rights Reserved.
+                <div>
+                    &copy; {new Date().getFullYear()} Frozen Thread. All Rights Reserved.
+                </div>
+                
+                {/* --- THIS IS THE NEW SECTION --- */}
+                <div className='mt-2'>
+                    Developed by 
+                    <a 
+                        href="https://www.linkedin.com/in/md-abid-hussain09" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className='font-medium text-gray-400 hover:text-white underline ml-1'
+                    >
+                        Md Abid Hussain
+                    </a>
+                </div>
+                {/* -------------------------------- */}
+
             </div>
         </footer>
     )
