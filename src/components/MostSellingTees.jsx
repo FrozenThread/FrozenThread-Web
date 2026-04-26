@@ -28,13 +28,6 @@ const products = [
         price: '₹999',
     },
     {
-        id: 3,
-        image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753005550/Picsart_25-05-30_14-29-30-555_sxwf4o.jpg',
-        name: 'Spooky Ghost Diffy the Oddy',
-        category: 'Oversized t-shirt',
-        price: '₹999',
-    },
-    {
         id: 4,
         image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753005550/Picsart_25-05-30_14-29-30-555_sxwf4o.jpg',
         name: 'SPOOKY Ghost Smoking Kills',
