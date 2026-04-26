@@ -1,38 +1,52 @@
 const products = [
     {
         id: 1,
+        image: 'https://res.cloudinary.com/dpof6jswm/image/upload/v1777227251/Picsart_25-06-14_17-32-44-477_xgub67.jpg',
+        name: 'Dare to Disturb',
+        category: 'Oversized t-shirt',
+        price: '₹999',
+    },
+    {
+        id: 1,
+        image: 'https://res.cloudinary.com/dpof6jswm/image/upload/v1777227251/gf3_atq9jj.jpg',
+        name: 'PowerPuff Girls',
+        category: 'Oversized t-shirt',
+        price: '₹999',
+    },
+    {
+        id: 1,
         image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753005295/Picsart_25-05-30_00-42-41-167_1_sq1mdw.jpg',
         name: 'Cartoon  Caus',
         category: 'Oversized t-shirt',
-        price: '₹599',
+        price: '₹999',
     },
     {
         id: 2,
         image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753008193/Picsart_25-05-30_00-16-23-630_w9331b.jpg',
         name: 'Harry Potter HOGWARTS',
         category: 'Oversized t-shirt',
-        price: '₹599',
+        price: '₹999',
     },
     {
         id: 3,
         image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753005550/Picsart_25-05-30_14-29-30-555_sxwf4o.jpg',
         name: 'Spooky Ghost Diffy the Oddy',
         category: 'Oversized t-shirt',
-        price: '₹599',
+        price: '₹999',
     },
     {
         id: 4,
         image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753005550/Picsart_25-05-30_14-29-30-555_sxwf4o.jpg',
         name: 'SPOOKY Ghost Smoking Kills',
         category: 'Oversized t-shirt',
-        price: '₹599',
+        price: '₹999',
     },
     {
         id: 5,
         image: 'https://res.cloudinary.com/dpof6jswm/image/upload/f_auto,q_auto,w_400/v1753005295/Picsart_25-05-30_00-42-41-167_1_sq1mdw.jpg',
         name: 'FT Comic',
         category: 'Oversized t-shirt',
-        price: '₹599',
+        price: '₹999',
     },
 ]
 

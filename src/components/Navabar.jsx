@@ -4,7 +4,7 @@ export const Navabar = () => {
     return (
         <div className='w-full'>
             <div className='bg-black text-white text-base sm:text-2xl text-center copperplate-bold p-1 h-10 flex items-center justify-center'>
-                10% OFF ON FIRST ORDER
+                25% OFF ON FIRST ORDER
             </div>
 
             <div className='flex flex-col sm:flex-row items-center justify-center p-4 sm:h-28 gap-4'>
